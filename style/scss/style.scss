@@ -1,0 +1,368 @@
+@font-face {
+    font-family: "ProximaNova";
+    src : url("../fonts/proximanova-regular.woff2");
+}
+
+@font-face {
+    font-family: "Umnik";
+    src : url("../fonts/umnik-bold.woff2");
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+%button-options {
+    border: none;
+    padding: 10px 20px;
+    width: 95%;
+    font-family: "ProximaNova"!important;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23.42px;
+    color: white;
+    box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.44);
+    background-color: #ff0072;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "ProximaNova";
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+    @media (max-width: 767.98px) {
+        padding: 0 10px;
+    }
+    .centralContainer {
+        margin: 0 auto;
+        min-width: 320px;
+        width: 1211px;
+        @media (max-width: 990px) {
+            width: 566px;
+        }
+        h3 {
+            font-size: 40px;
+            font-weight: 400;
+            margin: 34px 0 24px 20px;
+            @media (max-width: 1200px) {
+                font-size: 30px;
+                margin: 30px 5px 20px;
+            }
+            @media (max-width: 990px) {
+                font-size: 25px;
+                margin: 20px 0 10px;
+            }
+            @media (max-width: 440px) {
+                font-size: 20px;
+            }
+        }
+        .banner_wrapper {
+            display: flex;
+            justify-content: space-around;
+            @media (max-width: 990px) {
+                flex-direction: column;
+                align-items: center;
+            }
+            .banner {
+                margin: 0 5px;
+                max-width: 566px;
+                max-height: 294px;
+                @media (max-width: 990px) {
+                    margin: 10px 0;
+                }
+                @media (max-width: 440px) {
+                    margin: 5px 0;
+                }
+            }
+            .banner_1 {
+                flex-basis: 566px;
+                flex-grow: 1;
+                display: flex;
+                background: url('../../img/bg_banner1.jpg') center/cover no-repeat;
+                padding: 12px 15px;
+                box-sizing: border-box;
+                @media (max-width: 1200px) {
+                    padding: 12px 10px;
+                }
+                @media (max-width: 990px) {
+                    padding: 12px 15px;
+                }
+                @media (max-width: 550px) {
+                    padding: 12px 10px;
+                    max-height: fit-content;
+                }
+                @media (max-width: 440px) {
+                    padding: 8px 6px;
+                }
+                .img_promo {
+                    flex-basis: 200px;
+                    flex-grow: 1;
+                    .img_wrapper {
+                        position: relative;
+                        width: 100%;
+                        .main {
+                            width: 100%;
+                            max-width: 195px;
+                            height: auto;
+                            &:hover {
+                                cursor: pointer;
+                                transform: scale(1.05, 1.05);
+                            }
+                            @media (max-width: 375px) {
+                                padding-top: 12px;
+                                box-sizing: border-box;
+                            }
+                        }
+                        .mini {
+                            position: absolute;
+                            right: -41px;
+                            top: -10px;
+                            @media (max-width: 440px) {
+                                width: 80px;
+                                right: -32px;
+                            }
+                            @media (max-width: 375px) {
+                                width: 65px;
+                                right: -25px;
+                            }
+                        }
+                    }
+                }
+                .banner1_text {
+                    flex-basis: 300px;
+                    flex-grow: 1;
+                    margin-left: 44px;
+                    @media (max-width: 440px) {
+                        margin-left: 30px;
+                    }
+                    @media (max-width: 375px) {
+                        margin-left: 25px;
+                    }
+                    h4 {
+                        margin: 0;
+                        font-size: 30px;
+                        font-weight: 700;
+                        line-height: 38px;
+                        @media (max-width: 1080px) {
+                            font-size: 26px;
+                            line-height: 34px;
+                        }
+                        @media (max-width: 990px) {
+                            font-size: 30px;
+                            line-height: 38px;
+                        }
+                        @media (max-width: 550px) {
+                            font-size: 26px;
+                            line-height: 34px;
+                        }
+                        @media (max-width: 480px) {
+                            font-size: 22px;
+                            line-height: 30px;
+                        }
+                        @media (max-width: 440px) {
+                            font-size: 18px;
+                            line-height: 24px;
+                        }
+                    }
+                    p {
+                        margin: 5px 0;
+                        font-size: 16px;
+                        font-weight: 400;
+                        @media (max-width: 1170px) {
+                            font-size: 14px;
+                            line-height: 16px;
+                        }
+                        @media (max-width: 990px) {
+                            font-size: 16px;
+                            line-height: auto;
+                        }
+                        @media (max-width: 535px) {
+                            font-size: 14px;
+                            line-height: 16px;
+                        }
+                    }
+                    #clockdiv {
+                        display: flex;
+                        width: 95%;
+                        justify-content: space-between;
+                        .clock_wrapper {
+                            text-align: center;
+                            .clock {
+                                @include border-radius(5px);
+                                width: 80px;
+                                height: 55px;
+                                background: url('../../img/line.png') center no-repeat, white;
+                                font-family: "Umnik";
+                                font-size: 55px;
+                                font-weight: 700;
+                                text-align: center;
+                                @media (max-width: 1093px) {
+                                    width: 70px;
+                                    height: 45px;
+                                    font-size: 48px;
+                                }
+                                @media (max-width: 990px) {
+                                    width: 80px;
+                                    height: 55px;
+                                    font-size: 55px;
+                                }
+                                @media (max-width: 535px) {
+                                    width: 70px;
+                                    height: 45px;
+                                    font-size: 48px;
+                                }
+                                @media (max-width: 480px) {
+                                    width: 65px;
+                                    height: 40px;
+                                    font-size: 44px;
+                                }
+                                @media (max-width: 440px) {
+                                    width: 60px;
+                                    height: 35px;
+                                    font-size: 36px;
+                                }
+                                @media (max-width: 400px) {
+                                    width: 55px;
+                                    height: 30px;
+                                    font-size: 34px;
+                                }
+                                @media (max-width: 360px) {
+                                    width: 52px;
+                                    height: 27px;
+                                    font-size: 32px;
+                                }
+                            }
+                            @media (max-width: 1170px) {
+                                font-size: 14px;
+                            }
+                            @media (max-width: 990px) {
+                                font-size: 16px;
+                            }
+                            @media (max-width: 535px) {
+                                font-size: 14px;
+                            }
+
+                        }
+                    }
+                    .priceandbuy {
+                        display: flex;
+                        padding-top: 10px;
+                        @media (max-width: 1147px) {
+                            padding-top: 5px;
+                        }
+                        .price {
+                            flex-basis: 100px;
+                            flex-grow: 1;
+                            .newprice{
+                                color: #ff0072;
+                                font-size: 36px;
+                                font-weight: 700;
+                                width: 100%;
+                                height: fit-content;
+                                @media (max-width: 1140px) {
+                                    font-size: 28px;
+                                }
+                                @media (max-width: 990px) {
+                                    font-size: 36px;
+                                }
+                                @media (max-width: 580px) {
+                                    font-size: 28px;
+                                }
+                                @media (max-width: 480px) {
+                                    font-size: 24px;
+                                }
+                                @media (max-width: 440px) {
+                                    font-size: 20px;
+                                }
+                            }
+                            .oldprice {
+                                background: url('../../img/crossline.png') left no-repeat;
+                                padding: 0 5px;
+                                line-height: 16px;
+                                @media (max-width: 1135px) {
+                                    font-size: 14px;
+                                    line-height: 10px;
+                                }
+                                @media (max-width: 990px) {
+                                    font-size: 16px;
+                                    line-height: 16px;
+                                }
+                                @media (max-width: 580px) {
+                                    font-size: 14px;
+                                }
+                                @media (max-width: 375px) {
+                                    line-height: 10px;
+                                }
+                            }
+                        }
+                        .buy {
+                            flex-basis: 100px;
+                            flex-grow: 1;
+                            display: flex;
+                            align-items: center;
+                            padding-top: 10px;
+                            button {
+                                @extend %button-options;
+                                @media (max-width: 1050px) {
+                                    padding: 9px 16px;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                }
+                                @media (max-width: 990px) {
+                                    padding: 10px 20px;
+                                    font-size: 18px;
+                                    line-height: 23.42px;
+                                }
+                                @media (max-width: 580px) {
+                                    padding: 9px 16px;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                }
+                                @media (max-width: 480px) {
+                                    padding: 9px 14px;
+                                    font-size: 14px;
+                                    line-height: 16px;
+                                }
+                                @media (max-width: 400px) {
+                                    padding: 8px 12px;
+                                    font-size: 12px;
+                                    line-height: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .banner_2 {
+                flex-basis: 566px;
+                flex-grow: 1;
+                position: relative;
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.44);
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                
+            }
+        }
+
+    }
+}
+

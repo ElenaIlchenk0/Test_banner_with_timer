@@ -1,0 +1,612 @@
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/proximanova-regular.woff2");
+}
+
+@font-face {
+  font-family: "Umnik";
+  src: url("../fonts/umnik-bold.woff2");
+}
+
+/* line 18, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+.wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text .priceandbuy .buy button {
+  border: none;
+  padding: 10px 20px;
+  width: 95%;
+  font-family: "ProximaNova" !important;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.42px;
+  color: white;
+  box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.44);
+  background-color: #ff0072;
+}
+
+/* line 30, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+.wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text .priceandbuy .buy button:hover {
+  cursor: pointer;
+}
+
+/* line 35, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "ProximaNova";
+}
+
+/* line 41, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 767.98px) {
+  /* line 41, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper {
+    padding: 0 10px;
+  }
+}
+
+/* line 50, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+.wrapper .centralContainer {
+  margin: 0 auto;
+  min-width: 320px;
+  width: 1211px;
+}
+
+@media (max-width: 990px) {
+  /* line 50, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer {
+    width: 566px;
+  }
+}
+
+/* line 57, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+.wrapper .centralContainer h3 {
+  font-size: 40px;
+  font-weight: 400;
+  margin: 34px 0 24px 20px;
+}
+
+@media (max-width: 1200px) {
+  /* line 57, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer h3 {
+    font-size: 30px;
+    margin: 30px 5px 20px;
+  }
+}
+
+@media (max-width: 990px) {
+  /* line 57, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer h3 {
+    font-size: 25px;
+    margin: 20px 0 10px;
+  }
+}
+
+@media (max-width: 440px) {
+  /* line 57, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer h3 {
+    font-size: 20px;
+  }
+}
+
+/* line 73, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+.wrapper .centralContainer .banner_wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 990px) {
+  /* line 73, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* line 80, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+.wrapper .centralContainer .banner_wrapper .banner {
+  margin: 0 5px;
+  max-width: 566px;
+  max-height: 294px;
+}
+
+@media (max-width: 990px) {
+  /* line 80, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 440px) {
+  /* line 80, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner {
+    margin: 5px 0;
+  }
+}
+
+/* line 91, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+.wrapper .centralContainer .banner_wrapper .banner_1 {
+  flex-basis: 566px;
+  flex-grow: 1;
+  display: flex;
+  background: url("../../img/bg_banner1.jpg") center/cover no-repeat;
+  padding: 12px 15px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+  /* line 91, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 {
+    padding: 12px 10px;
+  }
+}
+
+@media (max-width: 990px) {
+  /* line 91, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 {
+    padding: 12px 15px;
+  }
+}
+
+@media (max-width: 550px) {
+  /* line 91, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 {
+    padding: 12px 10px;
+    max-height: fit-content;
+  }
+}
+
+@media (max-width: 440px) {
+  /* line 91, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 {
+    padding: 8px 6px;
+  }
+}
+
+/* line 111, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+.wrapper .centralContainer .banner_wrapper .banner_1 .img_promo {
+  flex-basis: 200px;
+  flex-grow: 1;
+}
+
+/* line 114, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+.wrapper .centralContainer .banner_wrapper .banner_1 .img_promo .img_wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* line 117, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+.wrapper .centralContainer .banner_wrapper .banner_1 .img_promo .img_wrapper .main {
+  width: 100%;
+  max-width: 195px;
+  height: auto;
+}
+
+/* line 121, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+.wrapper .centralContainer .banner_wrapper .banner_1 .img_promo .img_wrapper .main:hover {
+  cursor: pointer;
+  transform: scale(1.05, 1.05);
+}
+
+@media (max-width: 375px) {
+  /* line 117, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .img_promo .img_wrapper .main {
+    padding-top: 12px;
+    box-sizing: border-box;
+  }
+}
+
+/* line 130, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+.wrapper .centralContainer .banner_wrapper .banner_1 .img_promo .img_wrapper .mini {
+  position: absolute;
+  right: -41px;
+  top: -10px;
+}
+
+@media (max-width: 440px) {
+  /* line 130, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .img_promo .img_wrapper .mini {
+    width: 80px;
+    right: -32px;
+  }
+}
+
+@media (max-width: 375px) {
+  /* line 130, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .img_promo .img_wrapper .mini {
+    width: 65px;
+    right: -25px;
+  }
+}
+
+/* line 145, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+.wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text {
+  flex-basis: 300px;
+  flex-grow: 1;
+  margin-left: 44px;
+}
+
+@media (max-width: 440px) {
+  /* line 145, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  /* line 145, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text {
+    margin-left: 25px;
+  }
+}
+
+/* line 155, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+.wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text h4 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+@media (max-width: 1080px) {
+  /* line 155, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text h4 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+}
+
+@media (max-width: 990px) {
+  /* line 155, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text h4 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
+
+@media (max-width: 550px) {
+  /* line 155, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text h4 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* line 155, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text h4 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 440px) {
+  /* line 155, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text h4 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+/* line 181, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+.wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text p {
+  margin: 5px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media (max-width: 1170px) {
+  /* line 181, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 990px) {
+  /* line 181, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text p {
+    font-size: 16px;
+    line-height: auto;
+  }
+}
+
+@media (max-width: 535px) {
+  /* line 181, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+/* line 198, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+.wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text #clockdiv {
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+}
+
+/* line 202, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+.wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text #clockdiv .clock_wrapper {
+  text-align: center;
+}
+
+/* line 204, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+.wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text #clockdiv .clock_wrapper .clock {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  width: 80px;
+  height: 55px;
+  background: url("../../img/line.png") center no-repeat, white;
+  font-family: "Umnik";
+  font-size: 55px;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (max-width: 1093px) {
+  /* line 204, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text #clockdiv .clock_wrapper .clock {
+    width: 70px;
+    height: 45px;
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 990px) {
+  /* line 204, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text #clockdiv .clock_wrapper .clock {
+    width: 80px;
+    height: 55px;
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 535px) {
+  /* line 204, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text #clockdiv .clock_wrapper .clock {
+    width: 70px;
+    height: 45px;
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* line 204, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text #clockdiv .clock_wrapper .clock {
+    width: 65px;
+    height: 40px;
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 440px) {
+  /* line 204, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text #clockdiv .clock_wrapper .clock {
+    width: 60px;
+    height: 35px;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 400px) {
+  /* line 204, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text #clockdiv .clock_wrapper .clock {
+    width: 55px;
+    height: 30px;
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 360px) {
+  /* line 204, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text #clockdiv .clock_wrapper .clock {
+    width: 52px;
+    height: 27px;
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 1170px) {
+  /* line 202, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text #clockdiv .clock_wrapper {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 990px) {
+  /* line 202, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text #clockdiv .clock_wrapper {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 535px) {
+  /* line 202, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text #clockdiv .clock_wrapper {
+    font-size: 14px;
+  }
+}
+
+/* line 261, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+.wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text .priceandbuy {
+  display: flex;
+  padding-top: 10px;
+}
+
+@media (max-width: 1147px) {
+  /* line 261, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text .priceandbuy {
+    padding-top: 5px;
+  }
+}
+
+/* line 267, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+.wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text .priceandbuy .price {
+  flex-basis: 100px;
+  flex-grow: 1;
+}
+
+/* line 270, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+.wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text .priceandbuy .price .newprice {
+  color: #ff0072;
+  font-size: 36px;
+  font-weight: 700;
+  width: 100%;
+  height: fit-content;
+}
+
+@media (max-width: 1140px) {
+  /* line 270, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text .priceandbuy .price .newprice {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 990px) {
+  /* line 270, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text .priceandbuy .price .newprice {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 580px) {
+  /* line 270, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text .priceandbuy .price .newprice {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* line 270, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text .priceandbuy .price .newprice {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 440px) {
+  /* line 270, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text .priceandbuy .price .newprice {
+    font-size: 20px;
+  }
+}
+
+/* line 292, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+.wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text .priceandbuy .price .oldprice {
+  background: url("../../img/crossline.png") left no-repeat;
+  padding: 0 5px;
+  line-height: 16px;
+}
+
+@media (max-width: 1135px) {
+  /* line 292, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text .priceandbuy .price .oldprice {
+    font-size: 14px;
+    line-height: 10px;
+  }
+}
+
+@media (max-width: 990px) {
+  /* line 292, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text .priceandbuy .price .oldprice {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 580px) {
+  /* line 292, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text .priceandbuy .price .oldprice {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 375px) {
+  /* line 292, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text .priceandbuy .price .oldprice {
+    line-height: 10px;
+  }
+}
+
+/* line 312, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+.wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text .priceandbuy .buy {
+  flex-basis: 100px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
+@media (max-width: 1050px) {
+  /* line 318, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text .priceandbuy .buy button {
+    padding: 9px 16px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 990px) {
+  /* line 318, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text .priceandbuy .buy button {
+    padding: 10px 20px;
+    font-size: 18px;
+    line-height: 23.42px;
+  }
+}
+
+@media (max-width: 580px) {
+  /* line 318, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text .priceandbuy .buy button {
+    padding: 9px 16px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* line 318, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text .priceandbuy .buy button {
+    padding: 9px 14px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  /* line 318, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+  .wrapper .centralContainer .banner_wrapper .banner_1 .banner1_text .priceandbuy .buy button {
+    padding: 8px 12px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+/* line 350, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+.wrapper .centralContainer .banner_wrapper .banner_2 {
+  flex-basis: 566px;
+  flex-grow: 1;
+  position: relative;
+}
+
+/* line 354, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+.wrapper .centralContainer .banner_wrapper .banner_2:hover {
+  cursor: pointer;
+  box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.44);
+}
+
+/* line 358, C:/Users/Lenale/Documents/test bandaumnikov/style/scss/style.scss */
+.wrapper .centralContainer .banner_wrapper .banner_2 img {
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=../css/style.map */
